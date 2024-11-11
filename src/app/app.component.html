@@ -1,0 +1,22 @@
+<div>
+
+  <label for="category-filter">Filter by Category:</label>
+  <select id="category-filter" (change)="onCategoryChange($event)">
+    <option value="all">All</option>
+    <option value="India">India</option>
+    <option value="UAE">UAE</option>
+    <option value="Abudabi">Abudabi</option>
+  </select>
+
+  <label for="start-date">Start Date:</label>
+  <input type="date" id="start-date" (change)="onStartDateChange($event)" />
+
+  <label for="end-date">End Date:</label>
+  <input type="date" id="end-date" (change)="onEndDateChange($event)" />
+
+  <!-- Chart Section -->
+  <div id="chart"></div>
+
+</div>
+
+<router-outlet />
